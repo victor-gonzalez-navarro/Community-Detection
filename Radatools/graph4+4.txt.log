@@ -1,0 +1,121 @@
+=====================================
+Starting 5 Extremal
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+End of 5 Extremal
+Q(e) = 0.423077   (0.007s)
+=====================================
+Starting 5 Louvain
+  resizing
+  Q = 0.423077   comms = 2
+  End rep
+End of 5 Louvain
+Q(l) = 0.423077   (0.003s)
+=====================================
+Ini_Default
+=====================================
+Starting 5 Louvain
+  Q = 0.298817   comms = 3
+  Q = 0.423077   comms = 2
+  resizing
+  Q = 0.423077   comms = 2
+  End rep
+End of 5 Louvain
+Q(l) = 0.000000   (0.002s)
+=====================================
+Starting 5 Reposition
+  End rep
+End of 5 Reposition
+Q(r) = 0.423077   (0.001s)
+=====================================
+Ini_Default
+=====================================
+Starting 5 Louvain
+  Q = 0.298817   comms = 3
+  Q = 0.423077   comms = 2
+  resizing
+  Q = 0.423077   comms = 2
+  End rep
+End of 5 Louvain
+Q(l) = 0.000000   (0.002s)
+=====================================
+Starting 5 Louvain
+  resizing
+  Q = 0.423077   comms = 2
+  End rep
+End of 5 Louvain
+Q(l) = 0.423077   (0.002s)
+=====================================
+Ini_Default
+=====================================
+Starting 5 Spectral
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+End of 5 Spectral
+Q(s) = 0.423077   (0.009s)
+=====================================
+Starting 5 Reposition
+  End rep
+End of 5 Reposition
+Q(r) = 0.423077   (0.001s)
+=====================================
+Starting 5 Fast
+  Q = 0.423077   comms = 2
+  End rep
+End of 5 Fast
+Q(f) = 0.423077   (0.002s)
+=====================================
+Starting 5 Reposition
+  End rep
+End of 5 Reposition
+Q(r) = 0.423077   (0.001s)
+=====================================
+Ini_Default
+=====================================
+Starting 5 Tabu
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+  Q = 0.423077   comms = 2
+  End rep
+End of 5 Tabu
+Q(t) = 0.423077   (0.009s)
+=====================================
+Starting 5 Reposition
+  End rep
+End of 5 Reposition
+Q(r) = 0.423077   (0.002s)
+=====================================
+Starting 5 Fast
+  Q = 0.423077   comms = 2
+  End rep
+End of 5 Fast
+Q(f) = 0.423077   (0.002s)
+=====================================
+Starting 5 Reposition
+  End rep
+End of 5 Reposition
+Q(r) = 0.423077   (0.001s)
+=====================================
+Q_Best = 0.423077   (0.045s)   communities: 2   parameters: UN el-lr-ll-srfr-trfr 5

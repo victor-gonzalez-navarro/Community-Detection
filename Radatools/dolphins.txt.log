@@ -1,0 +1,177 @@
+=====================================
+Starting 5 Extremal
+  Q = 0.402733   comms = 2
+  Q = 0.476544   comms = 3
+  Q = 0.526463   comms = 4
+  End rep
+  Q = 0.402733   comms = 2
+  Q = 0.452652   comms = 3
+  Q = 0.526463   comms = 4
+  End rep
+  Q = 0.402733   comms = 2
+  Q = 0.476544   comms = 3
+  Q = 0.526463   comms = 4
+  End rep
+  Q = 0.402733   comms = 2
+  Q = 0.448618   comms = 3
+  Q = 0.522428   comms = 4
+  End rep
+  Q = 0.402733   comms = 2
+  Q = 0.452652   comms = 3
+  Q = 0.526463   comms = 4
+  End rep
+End of 5 Extremal
+Q(e) = 0.526463   (0.073s)
+=====================================
+Starting 5 Louvain
+  resizing
+  Q = 0.526463   comms = 4
+  Q = 0.071429   comms = 2
+  resizing
+  Q = 0.304478   comms = 2
+  End rep
+End of 5 Louvain
+Q(l) = 0.526463   (0.006s)
+=====================================
+Ini_Default
+=====================================
+Starting 5 Louvain
+  Q = 0.377576   comms = 19
+  Q = 0.479847   comms = 11
+  Q = 0.495214   comms = 10
+  resizing
+  Q = 0.495214   comms = 10
+  Q = 0.230030   comms = 4
+  resizing
+  Q = 0.506250   comms = 4
+  End rep
+End of 5 Louvain
+Q(l) = 0.000000   (0.008s)
+=====================================
+Starting 5 Reposition
+  Q = 0.523417   comms = 4
+  End rep
+End of 5 Reposition
+Q(r) = 0.523417   (0.006s)
+=====================================
+Ini_Default
+=====================================
+Starting 5 Louvain
+  Q = 0.377576   comms = 19
+  Q = 0.479847   comms = 11
+  Q = 0.495214   comms = 10
+  resizing
+  Q = 0.495214   comms = 10
+  Q = 0.230030   comms = 4
+  resizing
+  Q = 0.506250   comms = 4
+  End rep
+End of 5 Louvain
+Q(l) = 0.000000   (0.009s)
+=====================================
+Starting 5 Louvain
+  Q = 0.523417   comms = 4
+  resizing
+  Q = 0.523417   comms = 4
+  End rep
+End of 5 Louvain
+Q(l) = 0.506250   (0.006s)
+=====================================
+Ini_Default
+=====================================
+Starting 5 Spectral
+  Q = 0.389858   comms = 2
+  Q = 0.392053   comms = 3
+  Q = 0.484020   comms = 4
+  Q = 0.491199   comms = 5
+  End rep
+  Q = 0.389858   comms = 2
+  Q = 0.481824   comms = 3
+  Q = 0.489004   comms = 4
+  Q = 0.491199   comms = 5
+  End rep
+  Q = 0.389858   comms = 2
+  Q = 0.481824   comms = 3
+  Q = 0.489004   comms = 4
+  Q = 0.491199   comms = 5
+  End rep
+  Q = 0.389858   comms = 2
+  Q = 0.481824   comms = 3
+  Q = 0.489004   comms = 4
+  Q = 0.491199   comms = 5
+  End rep
+  Q = 0.389858   comms = 2
+  Q = 0.481824   comms = 3
+  Q = 0.489004   comms = 4
+  Q = 0.491199   comms = 5
+  End rep
+End of 5 Spectral
+Q(s) = 0.491199   (0.250s)
+=====================================
+Starting 5 Reposition
+  Q = 0.510957   comms = 5
+  End rep
+End of 5 Reposition
+Q(r) = 0.510957   (0.004s)
+=====================================
+Starting 5 Fast
+  Q = 0.510957   comms = 5
+  End rep
+End of 5 Fast
+Q(f) = 0.510957   (0.004s)
+=====================================
+Starting 5 Reposition
+  End rep
+End of 5 Reposition
+Q(r) = 0.510957   (0.003s)
+=====================================
+Ini_Default
+=====================================
+Starting 5 Tabu
+  Q = 0.110973   comms = 42
+  Q = 0.296863   comms = 25
+  Q = 0.416063   comms = 14
+  Q = 0.503145   comms = 8
+  Q = 0.519026   comms = 6
+  End rep
+  Q = 0.110913   comms = 42
+  Q = 0.304141   comms = 25
+  Q = 0.468158   comms = 13
+  Q = 0.517938   comms = 6
+  End rep
+  Q = 0.119912   comms = 43
+  Q = 0.305407   comms = 26
+  Q = 0.459396   comms = 12
+  Q = 0.519085   comms = 6
+  End rep
+  Q = 0.119991   comms = 43
+  Q = 0.295617   comms = 26
+  Q = 0.437364   comms = 13
+  Q = 0.518294   comms = 6
+  End rep
+  Q = 0.116629   comms = 42
+  Q = 0.267375   comms = 24
+  Q = 0.400538   comms = 14
+  Q = 0.499209   comms = 8
+  Q = 0.526463   comms = 4
+  End rep
+End of 5 Tabu
+Q(t) = 0.526463   (0.406s)
+=====================================
+Starting 5 Reposition
+  End rep
+End of 5 Reposition
+Q(r) = 0.526463   (0.003s)
+=====================================
+Starting 5 Fast
+  Q = 0.526463   comms = 4
+  End rep
+End of 5 Fast
+Q(f) = 0.526463   (0.004s)
+=====================================
+Starting 5 Reposition
+  End rep
+End of 5 Reposition
+Q(r) = 0.526463   (0.004s)
+=====================================
+Q_Best = 0.526463   (0.785s)   communities: 4   parameters: UN el-lr-ll-srfr-trfr 5
