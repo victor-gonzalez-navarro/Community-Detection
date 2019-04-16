@@ -6,7 +6,7 @@ import numpy as np
 from community import community_louvain
 
 colors = ['y','r','g','b','yellow','navy','chocolate','tan','midnightblue','tomato','olive','m','pink','c','lightblue',
-          'burlywood','peru','brown','blueviolet','crimson','black']
+          'burlywood','peru','brown','blueviolet','crimson','black'] * 3
 
 # ------------------------------------------------------------------------------------------------------- READ RADATOOLS
 # Read file Radatools
@@ -56,6 +56,7 @@ for r, d, f in os.walk(path):
                     position[item] = np.array([dictionary[item]['x'], dictionary[item]['y']])
                 print(graph)
             else:
+                print('*******************'+graph)
                 position = nx.kamada_kawai_layout(G)
             # ------------------------------------------------------------------------------------ FIN READ COORDINATES
 
@@ -63,11 +64,14 @@ for r, d, f in os.walk(path):
             # Community
             partitionC = community_louvain.best_partition(G)
             partitionC = [value for key, value in partitionC.items()]
-            node_colorX = [colors[value] for value in partitionC]
+            node_colorC = [colors[value] for value in partitionC]
 
             if file != 'airports_UW':
                 # Ground Truth
                 node_colorT = [colors[value] for value in ground_truth_partition]
+                node_size = 50
+            else:
+                node_size = 0.1
 
             # Radatools
             partitionR = [-1]*len(G.node)
@@ -77,39 +81,42 @@ for r, d, f in os.walk(path):
             node_colorR = [colors[value] for value in partitionR]
 
             # Matlab
-            # partition = community_louvain.best_partition(G)
-            # node_colorM = [value for key, value in partition.items()]
+            # partitionM = community_louvain.best_partition(G)
+            # node_colorM = [value for key, value in partitionM.items()]
 
             # Drawing
             # C O M M U N I T Y
             fig = plt.figure(figsize=(12, 6))
             plt.subplot(1,4,1)
-            nx.draw_networkx(G, pos = position, node_color = node_colorX, node_size = 50,
-                             with_labels = False, edge_color = 'gray')
+            nx.draw_networkx(G, pos=position, node_color=node_colorC, node_size=node_size,
+                             with_labels=False, edge_color='gray')
             limits = plt.axis('off')
-            plt.title('Community'+'\n# Communities = '+str(len(set(node_colorX))))
+            plt.title('Community'+'\n# Communities = '+str(len(set(partitionC))))
 
             # G R O U N D   T R U T H
-            if file != 'airports_UW':
-                plt.subplot(1,4,4)
-                nx.draw_networkx(G, pos = position, node_color = node_colorT, node_size = 50,
-                             with_labels = False, edge_color = 'gray')
+            plt.subplot(1, 4, 4)
+            if file != 'airports_UW.txt':
+                nx.draw_networkx(G, pos=position, node_color=node_colorT, node_size=node_size,
+                             with_labels=False, edge_color='gray')
+                plt.title('Ground Truth'+'\n# Communities = '+str(len(set(ground_truth_partition))))
+            else:
+                plt.title('Ground Truth')
             limits = plt.axis('off')
-            plt.title('Ground Truth'+'\n# Communities = '+str(len(set(node_colorT))))
 
             # R A D A T O O L S
+            mmm = len(set(node_colorR))
             plt.subplot(1,4,2)
-            nx.draw_networkx(G, pos = position, node_color = node_colorR, node_size = 50,
-                             with_labels = False, edge_color = 'gray' )
+            nx.draw_networkx(G, pos=position, node_color=node_colorR, node_size=node_size,
+                             with_labels=False, edge_color='gray')
             limits = plt.axis('off')
-            plt.title('Radatools'+'\n# Communities = '+str(len(set(node_colorR))))
+            plt.title('Radatools'+'\n# Communities = '+str(len(set(partitionR))))
 
             # M A T L A B
             plt.subplot(1,4,3)
-            # nx.draw_networkx(G, pos = position, node_color = node_colorM, node_size = 50,
+            # nx.draw_networkx(G, pos = position, node_color = node_colorM, node_size = node_size,
             #                 with_labels = False, edge_color = 'gray')
             limits = plt.axis('off')
-            #plt.xlabel('# Communities = '+str(len(set(node_colorM))))
+            #plt.xlabel('# Communities = '+str(len(set(partitionM))))
             plt.title('Matlab')
 
             plt.suptitle('Network: '+graph+'\n\n ',fontsize=16)
