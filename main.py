@@ -17,6 +17,7 @@ files = []
 for r, d, f in os.walk(path):
     for file in f:
         if '.log' not in file:
+            # ------------------------------------------------------------------------------------ READ LABELS RADATOOLS
             fil = open('./Radatools/'+file, 'r')
             entra = False
             information = []
@@ -26,7 +27,17 @@ for r, d, f in os.walk(path):
                     information = information + [util_inf[1:],]
                 if line == '\n':
                     entra = True
-            # ------------------------------------------------------------------------------------ READ GROUND TRUTH
+            # --------------------------------------------------------------------------------------- READ LABELS MATLAB
+            filM = open('./Matlab/' + file[:-4]+'.net', 'r')
+            entraM = False
+            informationM = []
+            for lineM in filM:
+                if entraM:
+                    util_infM = lineM.split()
+                    informationM = informationM + [util_infM[0], ]
+                if lineM == '\n':
+                    entraM = True
+            # --------------------------------------------------------------------------------- READ GROUND TRUTH LABELS
             if file != 'airports_UW.txt':
                 if file == 'rb125.txt':
                     graph = file[:-4]+'-1'+ '.clu'
@@ -44,11 +55,11 @@ for r, d, f in os.walk(path):
                         ground_truth_partition.append(int(line))
                     entra = True
 
-            # ------------------------------------------------------------------------------------ MAIN CODE
+            # ----------------------------------------------------------------------------------------- READ PAJEK GRAPH
             graph = file[:-3]+'net'
             G = nx.Graph(nx.read_pajek('A3-networks/'+graph))
 
-            # ------------------------------------------------------------------------------------ INI READ COORDINATES
+            # ----------------------------------------------------------------------------------------- READ COORDINATES
             dictionary = G._node
             if len(list(dictionary[list(dictionary.keys())[0]].keys()))>1:
                 position = dict()
@@ -58,9 +69,8 @@ for r, d, f in os.walk(path):
             else:
                 print('*******************'+graph)
                 position = nx.kamada_kawai_layout(G)
-            # ------------------------------------------------------------------------------------ FIN READ COORDINATES
 
-
+            # -------------------------------------------------------------------------------------- COMPUTE COMMUNITIES
             # Community
             partitionC = community_louvain.best_partition(G)
             partitionC = [value for key, value in partitionC.items()]
@@ -81,12 +91,14 @@ for r, d, f in os.walk(path):
             node_colorR = [colors[value] for value in partitionR]
 
             # Matlab
-            # partitionM = community_louvain.best_partition(G)
-            # node_colorM = [value for key, value in partitionM.items()]
+            partitionM = [-1]*len(G.node)
+            for it in range(len(informationM)):
+                partitionM[it] = int(informationM[it])-1
+            node_colorM = [colors[value] for value in partitionM]
 
-            # Drawing
+            # -------------------------------------------------------------------------------------------- DRAW NETWORKS
             # C O M M U N I T Y
-            fig = plt.figure(figsize=(12, 6))
+            fig = plt.figure(figsize=(20, 6))
             plt.subplot(1,4,1)
             nx.draw_networkx(G, pos=position, node_color=node_colorC, node_size=node_size,
                              with_labels=False, edge_color='gray')
@@ -113,11 +125,10 @@ for r, d, f in os.walk(path):
 
             # M A T L A B
             plt.subplot(1,4,3)
-            # nx.draw_networkx(G, pos = position, node_color = node_colorM, node_size = node_size,
-            #                 with_labels = False, edge_color = 'gray')
+            nx.draw_networkx(G, pos=position, node_color=node_colorM, node_size=node_size,
+                             with_labels=False, edge_color='gray')
             limits = plt.axis('off')
-            #plt.xlabel('# Communities = '+str(len(set(partitionM))))
-            plt.title('Matlab')
+            plt.title('Matlab'+'\n# Communities = '+str(len(set(partitionM))))
 
             plt.suptitle('Network: '+graph+'\n\n ',fontsize=16)
             fig.savefig('./Images/'+graph+'.png')

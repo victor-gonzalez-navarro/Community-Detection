@@ -1,38 +1,19 @@
 =====================================
 Starting 5 Extremal
-  Q = 0.371795   comms = 2
-  Q = 0.402038   comms = 3
-  Q = 0.418803   comms = 4
   End rep
-  Q = 0.371795   comms = 2
-  Q = 0.402038   comms = 3
-  Q = 0.418803   comms = 4
   End rep
-  Q = 0.371795   comms = 2
-  Q = 0.402038   comms = 3
-  Q = 0.418803   comms = 4
   End rep
-  Q = 0.371795   comms = 2
-  Q = 0.388560   comms = 3
-  Q = 0.418803   comms = 4
   End rep
-  Q = 0.371795   comms = 2
-  Q = 0.402038   comms = 3
-  Q = 0.418803   comms = 4
   End rep
 End of 5 Extremal
-Q(e) = 0.418803   (0.032s)
+Q(e) = 0.419790   (0.013s)
 =====================================
 Starting 5 Louvain
-  Q = 0.419790   comms = 4
   resizing
   Q = 0.419790   comms = 4
-  Q = 0.166667   comms = 2
-  resizing
-  Q = 0.371466   comms = 2
   End rep
 End of 5 Louvain
-Q(l) = 0.418803   (0.004s)
+Q(l) = 0.419790   (0.004s)
 =====================================
 Ini_Default
 =====================================
@@ -43,19 +24,18 @@ Starting 5 Louvain
   Q = 0.361358   comms = 6
   resizing
   Q = 0.361358   comms = 6
-  Q = 0.208333   comms = 3
-  Q = 0.250000   comms = 2
+  Q = 0.418803   comms = 4
   resizing
-  Q = 0.264218   comms = 2
+  Q = 0.418803   comms = 4
   End rep
 End of 5 Louvain
-Q(l) = 0.000000   (0.005s)
+Q(l) = 0.418803   (0.006s)
 =====================================
 Starting 5 Reposition
-  Q = 0.371795   comms = 2
+  Q = 0.419790   comms = 4
   End rep
 End of 5 Reposition
-Q(r) = 0.371795   (0.003s)
+Q(r) = 0.419790   (0.004s)
 =====================================
 Ini_Default
 =====================================
@@ -66,23 +46,20 @@ Starting 5 Louvain
   Q = 0.361358   comms = 6
   resizing
   Q = 0.361358   comms = 6
-  Q = 0.208333   comms = 3
-  Q = 0.250000   comms = 2
+  Q = 0.418803   comms = 4
   resizing
-  Q = 0.264218   comms = 2
+  Q = 0.418803   comms = 4
   End rep
 End of 5 Louvain
-Q(l) = 0.000000   (0.006s)
+Q(l) = 0.418803   (0.006s)
 =====================================
 Starting 5 Louvain
-  Q = 0.293886   comms = 2
-  Q = 0.359961   comms = 2
-  Q = 0.371795   comms = 2
+  Q = 0.419790   comms = 4
   resizing
-  Q = 0.371795   comms = 2
+  Q = 0.419790   comms = 4
   End rep
 End of 5 Louvain
-Q(l) = 0.264218   (0.004s)
+Q(l) = 0.419790   (0.003s)
 =====================================
 Ini_Default
 =====================================
@@ -92,11 +69,7 @@ Starting 5 Spectral
   Q = 0.393409   comms = 4
   End rep
   Q = 0.371466   comms = 2
-  Q = 0.372699   comms = 3
-  Q = 0.393409   comms = 4
-  End rep
-  Q = 0.371466   comms = 2
-  Q = 0.372699   comms = 3
+  Q = 0.392176   comms = 3
   Q = 0.393409   comms = 4
   End rep
   Q = 0.371466   comms = 2
@@ -107,56 +80,60 @@ Starting 5 Spectral
   Q = 0.372699   comms = 3
   Q = 0.393409   comms = 4
   End rep
+  Q = 0.371466   comms = 2
+  Q = 0.392176   comms = 3
+  Q = 0.393409   comms = 4
+  End rep
 End of 5 Spectral
-Q(s) = 0.393409   (0.078s)
+Q(s) = 0.393409   (0.136s)
 =====================================
 Starting 5 Reposition
   Q = 0.398093   comms = 4
   End rep
 End of 5 Reposition
-Q(r) = 0.398093   (0.002s)
+Q(r) = 0.398093   (0.003s)
 =====================================
 Starting 5 Fast
   Q = 0.398093   comms = 4
   End rep
 End of 5 Fast
-Q(f) = 0.398093   (0.002s)
+Q(f) = 0.398093   (0.003s)
 =====================================
 Starting 5 Reposition
   End rep
 End of 5 Reposition
-Q(r) = 0.398093   (0.002s)
+Q(r) = 0.398093   (0.004s)
 =====================================
 Ini_Default
 =====================================
 Starting 5 Tabu
-  Q = 0.203978   comms = 15
-  Q = 0.380506   comms = 5
+  Q = 0.213757   comms = 14
+  Q = 0.390450   comms = 5
   Q = 0.419790   comms = 4
   End rep
-  Q = 0.214579   comms = 14
-  Q = 0.417242   comms = 4
+  Q = 0.189185   comms = 14
+  Q = 0.397847   comms = 4
   Q = 0.419790   comms = 4
   End rep
-  Q = 0.227975   comms = 15
-  Q = 0.401052   comms = 6
+  Q = 0.225838   comms = 14
+  Q = 0.406969   comms = 4
   Q = 0.419790   comms = 4
   End rep
-  Q = 0.232002   comms = 14
-  Q = 0.415598   comms = 4
+  Q = 0.220579   comms = 14
+  Q = 0.399655   comms = 6
   Q = 0.419790   comms = 4
   End rep
-  Q = 0.222387   comms = 15
-  Q = 0.375164   comms = 5
+  Q = 0.205703   comms = 16
+  Q = 0.419790   comms = 4
   Q = 0.419790   comms = 4
   End rep
 End of 5 Tabu
-Q(t) = 0.419790   (0.110s)
+Q(t) = 0.419790   (0.171s)
 =====================================
 Starting 5 Reposition
   End rep
 End of 5 Reposition
-Q(r) = 0.419790   (0.002s)
+Q(r) = 0.419790   (0.003s)
 =====================================
 Starting 5 Fast
   Q = 0.419790   comms = 4
@@ -167,6 +144,6 @@ Q(f) = 0.419790   (0.003s)
 Starting 5 Reposition
   End rep
 End of 5 Reposition
-Q(r) = 0.419790   (0.002s)
+Q(r) = 0.419790   (0.003s)
 =====================================
-Q_Best = 0.419790   (0.254s)   communities: 4   parameters: UN el-lr-ll-srfr-trfr 5
+Q_Best = 0.419790   (0.362s)   communities: 4   parameters: WN el-lr-ll-srfr-trfr 5

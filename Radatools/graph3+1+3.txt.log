@@ -1,17 +1,12 @@
 =====================================
 Starting 5 Extremal
-  Q = 0.367188   comms = 2
   End rep
-  Q = 0.367188   comms = 2
   End rep
-  Q = 0.367188   comms = 2
   End rep
-  Q = 0.367188   comms = 2
   End rep
-  Q = 0.367188   comms = 2
   End rep
 End of 5 Extremal
-Q(e) = 0.367188   (0.007s)
+Q(e) = 0.367188   (0.005s)
 =====================================
 Starting 5 Louvain
   resizing
@@ -30,12 +25,12 @@ Starting 5 Louvain
   Q = 0.367188   comms = 2
   End rep
 End of 5 Louvain
-Q(l) = 0.000000   (0.002s)
+Q(l) = 0.367188   (0.003s)
 =====================================
 Starting 5 Reposition
   End rep
 End of 5 Reposition
-Q(r) = 0.367188   (0.001s)
+Q(r) = 0.367188   (0.002s)
 =====================================
 Ini_Default
 =====================================
@@ -47,14 +42,14 @@ Starting 5 Louvain
   Q = 0.367188   comms = 2
   End rep
 End of 5 Louvain
-Q(l) = 0.000000   (0.002s)
+Q(l) = 0.367188   (0.002s)
 =====================================
 Starting 5 Louvain
   resizing
   Q = 0.367188   comms = 2
   End rep
 End of 5 Louvain
-Q(l) = 0.367188   (0.003s)
+Q(l) = 0.367188   (0.002s)
 =====================================
 Ini_Default
 =====================================
@@ -102,7 +97,7 @@ Starting 5 Tabu
   Q = 0.367188   comms = 2
   End rep
 End of 5 Tabu
-Q(t) = 0.367188   (0.009s)
+Q(t) = 0.367188   (0.010s)
 =====================================
 Starting 5 Reposition
   End rep
@@ -118,6 +113,6 @@ Q(f) = 0.367188   (0.002s)
 Starting 5 Reposition
   End rep
 End of 5 Reposition
-Q(r) = 0.367188   (0.002s)
+Q(r) = 0.367188   (0.001s)
 =====================================
-Q_Best = 0.367188   (0.049s)   communities: 2   parameters: UN el-lr-ll-srfr-trfr 5
+Q_Best = 0.367188   (0.048s)   communities: 2   parameters: WN el-lr-ll-srfr-trfr 5

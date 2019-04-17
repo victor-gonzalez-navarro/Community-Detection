@@ -6,14 +6,14 @@ Starting 5 Extremal
   End rep
   End rep
 End of 5 Extremal
-Q(e) = 0.000000   (0.007s)
+Q(e) = 0.000000   (0.006s)
 =====================================
 Starting 5 Louvain
   resizing
   Q = 0.000000   comms = 1
   End rep
 End of 5 Louvain
-Q(l) = 0.000000   (0.002s)
+Q(l) = 0.000000   (0.003s)
 =====================================
 Ini_Default
 =====================================
@@ -23,7 +23,7 @@ Starting 5 Louvain
   Q = 0.000000   comms = 1
   End rep
 End of 5 Louvain
-Q(l) = 0.000000   (0.002s)
+Q(l) = 0.000000   (0.003s)
 =====================================
 Starting 5 Reposition
   End rep
@@ -72,7 +72,7 @@ Q(f) = 0.000000   (0.002s)
 Starting 5 Reposition
   End rep
 End of 5 Reposition
-Q(r) = 0.000000   (0.002s)
+Q(r) = 0.000000   (0.001s)
 =====================================
 Ini_Default
 =====================================
@@ -93,7 +93,7 @@ Q(t) = 0.000000   (0.012s)
 Starting 5 Reposition
   End rep
 End of 5 Reposition
-Q(r) = 0.000000   (0.002s)
+Q(r) = 0.000000   (0.001s)
 =====================================
 Starting 5 Fast
   Q = 0.000000   comms = 1
@@ -104,6 +104,6 @@ Q(f) = 0.000000   (0.002s)
 Starting 5 Reposition
   End rep
 End of 5 Reposition
-Q(r) = 0.000000   (0.001s)
+Q(r) = 0.000000   (0.002s)
 =====================================
-Q_Best = 0.000000   (0.044s)   communities: 1   parameters: UN el-lr-ll-srfr-trfr 5
+Q_Best = 0.000000   (0.042s)   communities: 1   parameters: WN el-lr-ll-srfr-trfr 5
